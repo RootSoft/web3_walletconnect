@@ -1,5 +1,6 @@
 import 'package:algorand_dart/algorand_dart.dart';
 import 'package:walletconnect_flutter_v2/walletconnect_flutter_v2.dart';
+import 'package:web3_wallet/src/secure_store.dart';
 
 typedef OnSessionProposal = void Function(int id, ProposalData params);
 
@@ -22,6 +23,7 @@ class WalletConnector {
         url: 'https://walletconnect.com',
         icons: ['https://avatars.githubusercontent.com/u/37784886'],
       ),
+      storage: Web3Storage(),
     );
 
     wallet.onSessionProposal.subscribe((args) async {

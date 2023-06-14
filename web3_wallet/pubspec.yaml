@@ -12,7 +12,10 @@ dependencies:
 
   cupertino_icons: ^1.0.2
   algorand_dart: ^2.0.0-dev.14
-  walletconnect_flutter_v2: ^2.0.8
+  walletconnect_flutter_v2:
+    path: "/Users/tomas/projects/walletconnect/walletconnect_v2"
+
+  flutter_secure_storage: ^8.0.0
 
 dev_dependencies:
   flutter_test:
